@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F81E544-5212-4466-A7FB-2EBD525665EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Final_Project.My.MyApplication</StartupObject>
+    <RootNamespace>Final_Project</RootNamespace>
+    <AssemblyName>Final_Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Penjualan\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>id-ID</TargetCulture>
+    <ProductName>aplikasi penjualan</ProductName>
+    <PublisherName>Frendi Diyon Ardiansah</PublisherName>
+    <SuiteName>aplikasi penjualan</SuiteName>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Final_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Final_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9753AE8A101B79A1FFE1D67A829997CA70EA2B83</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Final_Project_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cetak.Designer.vb">
+      <DependentUpon>cetak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daftarbarang.Designer.vb">
+      <DependentUpon>daftarbarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="daftarbarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daftarpelanggan.Designer.vb">
+      <DependentUpon>daftarpelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="daftarpelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formmasteradmin.Designer.vb">
+      <DependentUpon>formmasteradmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formmasteradmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formmasterbarang.Designer.vb">
+      <DependentUpon>formmasterbarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formmasterbarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formmasterpelanggan.Designer.vb">
+      <DependentUpon>formmasterpelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formmasterpelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formtransaksijual.Designer.vb">
+      <DependentUpon>formtransaksijual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formtransaksijual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formutama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formutama.Designer.vb">
+      <DependentUpon>formutama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanadmin.Designer.vb">
+      <DependentUpon>laporanadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanbarang.Designer.vb">
+      <DependentUpon>laporanbarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanbarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporandataadmin.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporandataadmin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporandatabarang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporandatabarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporandatamember.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporandatamember.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanmember.Designer.vb">
+      <DependentUpon>laporanmember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanmember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanpenjualan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanpenjualan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanpenjualantanggal.Designer.vb">
+      <DependentUpon>laporanpenjualantanggal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanpenjualantanggal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="strukjual.Designer.vb">
+      <DependentUpon>strukjual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="strukjual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="strukpenjualan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strukpenjualan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="supplier.Designer.vb">
+      <DependentUpon>supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cetak.resx">
+      <DependentUpon>cetak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daftarbarang.resx">
+      <DependentUpon>daftarbarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daftarpelanggan.resx">
+      <DependentUpon>daftarpelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formmasteradmin.resx">
+      <DependentUpon>formmasteradmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formmasterbarang.resx">
+      <DependentUpon>formmasterbarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formmasterpelanggan.resx">
+      <DependentUpon>formmasterpelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formtransaksijual.resx">
+      <DependentUpon>formtransaksijual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formutama.resx">
+      <DependentUpon>formutama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanadmin.resx">
+      <DependentUpon>laporanadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanbarang.resx">
+      <DependentUpon>laporanbarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporandataadmin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporandataadmin.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporandatabarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporandatabarang.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporandatamember.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporandatamember.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanmember.resx">
+      <DependentUpon>laporanmember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanpenjualan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanpenjualan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanpenjualantanggal.resx">
+      <DependentUpon>laporanpenjualantanggal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="strukjual.resx">
+      <DependentUpon>strukjual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="strukpenjualan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>strukpenjualan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplier.resx">
+      <DependentUpon>supplier.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Final_Project_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystalPrintControlLib">
+      <Guid>{62862E3F-F35B-455E-9459-49EAADE80A25}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CrystalPrintControlLib">
+      <Guid>{62862E3F-F35B-455E-9459-49EAADE80A25}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
